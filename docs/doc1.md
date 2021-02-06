@@ -5,32 +5,16 @@ sidebar_label: Style Guide
 slug: /
 ---
 
-:::note
-
-This is a note
-
-:::
-
-:::tip
-
-This is a tip
-
-:::
-
-:::important
-
-This is important
-
-:::
 
 :::caution
 
-This is a caution
+The documentation is a work-in-progress.
 
 :::
 
 :::warning
 
-This is a warning
+Packager has not been completed.
 
 :::
+
