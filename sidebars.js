@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    Main: ['home', 'doc2', 'doc3'],
-    Features: ['mdx'],
+    Main: ['home', 'info', 'versions'],
+    Legal: ['licence'],
   },
 };
