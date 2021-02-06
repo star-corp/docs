@@ -1,5 +1,5 @@
 ---
-id: mdx
+id: licence
 title: Powered by MDX
 ---
 
