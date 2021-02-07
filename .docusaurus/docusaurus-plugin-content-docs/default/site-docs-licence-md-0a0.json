@@ -1,0 +1,17 @@
+{
+  "unversionedId": "licence",
+  "id": "licence",
+  "isDocsHomePage": false,
+  "title": "Powered by MDX",
+  "description": "You can write JSX and use React components within your Markdown thanks to MDX.",
+  "source": "@site/docs/licence.md",
+  "slug": "/licence",
+  "permalink": "/docs/licence",
+  "editUrl": "https://github.com/packagerops/docs/edit/main/docs/licence.md",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Versions",
+    "permalink": "/docs/versions"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "unversionedId": "home",
+  "id": "home",
+  "isDocsHomePage": false,
+  "title": "Home",
+  "description": "The documentation is a work-in-progress.",
+  "source": "@site/docs/home.md",
+  "slug": "/",
+  "permalink": "/docs/",
+  "editUrl": "https://github.com/packagerops/docs/edit/main/docs/home.md",
+  "version": "current",
+  "sidebar_label": "Style Guide",
+  "sidebar": "someSidebar",
+  "next": {
+    "title": "Document Number 2",
+    "permalink": "/docs/info"
+  }
+}

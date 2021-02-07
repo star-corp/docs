@@ -1,0 +1,21 @@
+{
+  "unversionedId": "info",
+  "id": "info",
+  "isDocsHomePage": false,
+  "title": "Document Number 2",
+  "description": "This is a link to another document. This is a link to an external page.",
+  "source": "@site/docs/info.md",
+  "slug": "/info",
+  "permalink": "/docs/info",
+  "editUrl": "https://github.com/packagerops/docs/edit/main/docs/info.md",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Home",
+    "permalink": "/docs/"
+  },
+  "next": {
+    "title": "Versions",
+    "permalink": "/docs/versions"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "unversionedId": "versions",
+  "id": "versions",
+  "isDocsHomePage": false,
+  "title": "Versions",
+  "description": "The documentation is a work-in-progress.",
+  "source": "@site/docs/versions.md",
+  "slug": "/versions",
+  "permalink": "/docs/versions",
+  "editUrl": "https://github.com/packagerops/docs/edit/main/docs/versions.md",
+  "version": "current",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Document Number 2",
+    "permalink": "/docs/info"
+  },
+  "next": {
+    "title": "Powered by MDX",
+    "permalink": "/docs/licence"
+  }
+}
