@@ -22,12 +22,6 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        {
-          to: 'references/',
-          activeBasePath: 'references',
-          label: 'References',
-          position: 'left',
-        },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/packagerops/docs',
