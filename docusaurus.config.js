@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Packager',
   tagline: 'the open source initiative.',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://starco.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
