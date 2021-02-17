@@ -588,7 +588,7 @@ function Home() {
                   'button hero--button button--md button--primary responsive-button',
                   styles.button
                 )}
-                to={'https://app.supabase.io'}
+                to={'https://starco.netlify.app'}
                 style={{ margin: 5 }}
               >
                 Beta sign up →
@@ -605,7 +605,7 @@ function Home() {
 export default () => {
   if (typeof window !== 'undefined') {
     if (window.location.href.indexOf('localhost') === -1) {
-      window.location.replace('https://supabase.io')
+      window.location.replace('https://starco.netlify.app')
     } else {
       window.location.replace('/docs')
     }
