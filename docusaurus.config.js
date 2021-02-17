@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'the open source initiative.',
   url: 'https://starco.netlify.app',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'packagerops', // Usually your GitHub org/user name.

@@ -3,7 +3,7 @@ export default {
   "tagline": "the open source initiative.",
   "url": "https://your-docusaurus-test-site.com",
   "baseUrl": "/",
-  "onBrokenLinks": "throw",
+  "onBrokenLinks": "warn",
   "onBrokenMarkdownLinks": "warn",
   "favicon": "img/favicon.ico",
   "organizationName": "packagerops",
