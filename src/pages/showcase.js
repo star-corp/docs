@@ -24,7 +24,7 @@ export default function Showcase() {
       {/* Add */}
       <Section title="Do you want to add your project?" style="underline">
         <p>
-          <Link href="docs/versions.md>
+          <Link href="docs/versions.md">
             Learn how
           </Link> to add your project to our showcase.
         </p>
