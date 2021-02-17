@@ -1,95 +1,207 @@
-/**
- * Copyright (c) 2017-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
+/* stylelint-disable docusaurus/copyright-header */
 
 /**
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
 
-/* .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+.heroBanner {
+  padding: 4.5rem 0 0 0;
+  text-align: left;
   position: relative;
   overflow: hidden;
-} */
 
-.heroBanner {
-  /* height: calc(100vh - 60px); */
-  min-height: 80vh;
-}
-.hero .code-with-header {
-  box-shadow:  0 0 5px 5px rgba(0, 0, 0, 0.3);
-  /* box-shadow: var(--ifm-global-shadow-md); */
+  min-height: 70vh;
 }
 
-.heroBanner h2 {
-  font-size: 2rem !important;
+.startButtonAndVersion {
+  display: inline-flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+  /*justify-content: flex-start;*/
 }
-.heroBanner p {
-  font-size: 1rem !important;
+
+.startCliCmd {
+  display: inline-flex;
+  background: #2a2d3e;
+  padding: 0.75rem 1rem;
+
+  align-items: center;
+  color: #bf9900;
+
+  height: 64px;
+
+  border-radius: var(--ifm-button-border-radius);
 }
-.heroImage {
-  max-height: 50vh;
+
+.startCliCmd code {
+  background: none;
+  //color: #bfc7d5;
+  color: #fff;
+  font-size: 1rem;
+
+  white-space: nowrap;
 }
+
+.startCliCmd > span::before {
+  content: "$ ";
+}
+
+.tryWaspRow {
+  margin-bottom: 0rem; /* 6 */
+}
+
+.tryWaspContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 0.5rem;
+}
+
+.usingWindows {
+  margin-bottom: 1rem;
+}
+
+.tryWaspContainer div:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.socialProofSection {
+  padding: 3rem 0;
+}
+
+.socialProof {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialProof > *:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.ycLogo {
+  max-width: 4rem;
+  margin-right: 0.8rem;
+}
+
+.backedByYC {
+  display: flex;
+  align-items: center
+}
+
+.waspVersion {
+  align-self: center;
+  text-decoration: underline;
+
+}
+
+.startButtonAndVersion > *:not(:first-child) {
+  margin-top: 0.8rem;
+}
+
 .features {
   display: flex;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
-}
-.forDevelopers {
-  display: flex;
-  margin-top: 5rem;
   align-items: center;
   padding: 2rem 0;
   width: 100%;
 }
 
-.forDevelopers .button {
-  margin-top: 10px;
-}
-.featureCard {
-  height: 100%;
-  margin-bottom: 10px;
-}
 .featureImage {
-  height: 50px;
-  width: 50px;
+  height: 200px;
+  width: 200px;
 }
 
-.button {
-  margin: 25px 10px;
+.featureListTitle {
+  font-weight: 600;
+  text-align: center;
 }
 
-.howCard h3 {
-  font-size: 2.5rem;
-  font-weight: 800;
+.featuresList {
+  list-style-type: none;
 }
 
-.pricingCard h3 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
+.featuresList li {
+  padding-left: 1rem;
+  text-indent: -0.2rem;
 }
-.pricingCard p {
-  margin: 0;
+
+.featuresList li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.featuresListComing li::before {
+  margin-right: 0.5rem;
+  content: "⏳ ";
+}
+
+.featuresListDone li::before {
+  margin-right: 0.5rem;
+  content: "✅ ";
 }
 
 .responsiveCentered {
   text-align: center;
 }
 
-.centered {
-  text-align: center;
+.featuresAndRoadmap {
+  margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 999px) {
-  .responsiveCentered {
-    text-align: left;
+/* NOTE(matija): it is important that this element is last! That way it overrides
+ * the properties from above, otherwise it would get overriden since the properties above
+ * are general. */
+
+/* TODO(matija): there is probably a better way of doing this, I don't like being dependent on
+ * the property order.*/
+@media screen and (max-width: 966px) {
+  .heroBanner {
+    padding: 2rem;
   }
+
+  .tryWaspContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tryWaspContainer > *:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .startButtonAndVersion {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .startButtonAndVersion > *:not(:first-child) {
+    /* NOTE(matija): this is here to counter margin-left from above, the general case. Terrible, I know. */  
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .socialProof {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .socialProof > *:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .heroButton {
+    width: 100%;
+  }
+
+  .startCliCmd code {
+    font-size: 0.7rem;
+  }
+
 }
+/* style={{ width: '300px', height: '60px', lineHeight: '40px', fontSize: '25px', margin: '40px 0px 0px 70px' }} */
