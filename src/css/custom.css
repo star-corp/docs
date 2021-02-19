@@ -14,12 +14,12 @@
   --custom-border-radius: 3px;
   --custom-border-radius-md: 6px;
   --custom-discord-color: #8a9cff;
-  --custom-wasp-color: #ffcc00;
+  --custom-wasp-color: #ae3ee2;
   --ifm-h3-font-size: 1.3rem;
 
   /* Infima overrides */
-  --ifm-color-primary: #BF9900; /* wasp color (ffcc00) darkened by 25% */
-  --ifm-color-primary-dark: #8a6f04;
+  --ifm-color-primary: #cb58e2; /* wasp color (ffcc00) darkened by 25% */
+  --ifm-color-primary-dark: #630f7c;
   --ifm-color-primary-darker: rgb(31, 165, 136);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
   --ifm-color-primary-light: rgb(70, 203, 174);

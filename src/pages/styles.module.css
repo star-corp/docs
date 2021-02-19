@@ -29,7 +29,7 @@
   padding: 0.75rem 1rem;
 
   align-items: center;
-  color: #bf9900;
+  color: #a130d6;
 
   height: 64px;
 
@@ -38,7 +38,7 @@
 
 .startCliCmd code {
   background: none;
-  //color: #bfc7d5;
+  color: #bfc7d5;
   color: #fff;
   font-size: 1rem;
 

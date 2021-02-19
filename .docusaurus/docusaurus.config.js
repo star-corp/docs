@@ -1,7 +1,7 @@
 export default {
   "title": "Packager",
   "tagline": "the open source initiative.",
-  "url": "https://your-docusaurus-test-site.com",
+  "url": "https://starco.netlify.app",
   "baseUrl": "/",
   "onBrokenLinks": "warn",
   "onBrokenMarkdownLinks": "warn",
@@ -110,7 +110,7 @@ export default {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "sidebarPath": "/Users/jro_k/Documents/GitHub/packager/docs/sidebars.js",
+          "sidebarPath": "/Users/jro_k/Documents/GitHub/packager/stardocs/sidebars.js",
           "editUrl": "https://github.com/packagerops/docs/edit/main/"
         },
         "blog": {
@@ -118,7 +118,7 @@ export default {
           "editUrl": "https://github.com/packagerops/docs/edit/main/"
         },
         "theme": {
-          "customCss": "/Users/jro_k/Documents/GitHub/packager/docs/src/css/custom.css"
+          "customCss": "/Users/jro_k/Documents/GitHub/packager/stardocs/src/css/custom.css"
         }
       }
     ]

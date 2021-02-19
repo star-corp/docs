@@ -395,12 +395,7 @@ function EmailAndGithubCta() {
           </div>
         </div>
 
-        <div className={clsx('row', styles.responsiveCentered)} style={{ paddingTop: '1rem' }}>
-          <div className="col col--8 col--offset-2">
-            <EmailSignupForm/>
-          </div>
-        </div>
-
+     
         <div className={clsx('row', styles.responsiveCentered, 'section-text')}>
           <div className="col col--10 col--offset-1">
             <h3>
@@ -472,12 +467,11 @@ function Home() {
 
               <div className="hero-text-col">
 
-                <h2 className="hero-subtitle">{siteConfig.tagline}</h2>
+                <h className="hero-subtitle"><b>starCorp</b></h>
 
                 <div className="hero-works-with">
                   <h3 className="works-with-text">
-                    Describe high-level features with Wasp DSL and write the rest of your logic
-                    in React, Node.js and Prisma.
+                    making stuff, like starBot, blocks, and <b>base</b>
                   </h3>
                   <div className="hero-works-with-icons">
                     <img src="img/works-with-logos.png" />
@@ -530,7 +524,7 @@ function Home() {
       </header>
 
       <main>
-        <EmailCta />
+
 
         {/* Social proof */}
         <SocialProofSection />
