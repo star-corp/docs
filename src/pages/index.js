@@ -170,7 +170,7 @@ page Main {
     const createAppMainComponentCode =
 `import React from 'react'
 
-export default () => <span> Hello World! </span>
+export default () => <span> pack iris </span>
 `
       return (
         <div className="codeExampleFiles">
