@@ -508,7 +508,7 @@ function Home() {
               </div>
 
               <div className={clsx(styles.usingWindows)}>
-                Using Windows? Check the instructions <Link to={useBaseUrl("/docs/#2-installation")}>here</Link>.
+              Documentation is <b>very incomplete.</b>
               </div>
 
               <div>
