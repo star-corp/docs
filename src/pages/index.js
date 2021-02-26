@@ -341,7 +341,7 @@ export default () => {
 function WaspGhStarsCount() {
   return (
     <iframe
-        src="https://ghbtns.com/github-btn.html?user=wasp-lang&repo=wasp&type=star&count=true&size=large" 
+        src="https://img.shields.io/badge/starCorp-base-blue" 
         frameborder="0"
         scrolling="0"
         width="160px" height="30px">
@@ -352,7 +352,7 @@ function WaspGhStarsCount() {
 function WaspDiscordBadge() {
   return (
     <a href="https://discord.gg/rzdnErX">
-      <img alt="discord" src="https://img.shields.io/discord/686873244791210014?label=chat%20@%20discord" height="29px" />
+      <img alt="discord" src="https://img.shields.io/discord/759421580090015816?label=chat%20%40%20discord" height="29px" />
     </a>
   )
 }
@@ -563,24 +563,14 @@ function Home() {
 
             <div className={clsx('row', styles.responsiveCentered)}>
               <div className="col col--10 col--offset-1">
-                <h2>How it works</h2>
+                <h2>Services</h2>
                 <h3>
                   <p>
-                    Given <code>.wasp</code> + <code>.js</code>, <code>.css</code>, <code>...</code> files as an input, Wasp compiler behind the scene&nbsp;
-                    <span className="title-strong">generates the full
-                    source code of your web app</span> - front-end, back-end and deployment.
+                    This is the holding organization for&nbsp;
+                    <span className="title-strong">starBot, blocks
+                    and base</span> 
                   </p>
                 </h3>
-              </div>
-            </div>
-
-            <div className={clsx('row', styles.responsiveCentered)} style={{ paddingTop: '2rem' }}>
-              <div className="col">
-                <img
-                  className={'wasp-diagram'}
-                  src="img/wasp-compilation.png"
-                  alt="Wasp compilation"
-                />
               </div>
             </div>
 
