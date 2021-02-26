@@ -492,7 +492,7 @@ function Home() {
 
               <div className={clsx(styles.tryWaspContainer)}>
                 <div className={clsx(styles.startCliCmd)}>
-                  <span><code>curl -sSL http://get.wasp-lang.dev | sh</code></span>
+                  <span><code>Hello World!</code></span>
                 </div>
 
                 <div className={styles.startButtonAndVersion}>
@@ -502,7 +502,7 @@ function Home() {
                       styles.heroButton,
                     )}
                     to={useBaseUrl('docs')}>
-                      Try Wasp in 5 minutes →
+                      Docs →
                   </Link>
                 </div>
               </div>
