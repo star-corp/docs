@@ -430,10 +430,8 @@ function SocialProofSection() {
           <div className="col col--10 col--offset-1">
             <div className={clsx(styles.socialProof)}>
               <div className={clsx(styles.backedByYC)}>
-                <img className={clsx(styles.ycLogo)} src="img/ycombinator-logo.png" />
-                <span>backed by <strong>Y Combinator</strong></span>
+                <span>starCorp <strong>making stuff..</strong></span>
               </div>
-              <ProductHuntBadge />
             </div>
           </div>
 
