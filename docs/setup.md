@@ -1,6 +1,6 @@
 ---
 id: setup
-title: netSys
+title: Setup
 ---
 
 :::info Information
