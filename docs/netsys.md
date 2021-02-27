@@ -3,15 +3,21 @@ id: netsys
 title: netSys
 ---
 
-You can write JSX and use React components within your Markdown thanks to [MDX](https://mdxjs.com/).
+netSys is a *soon* to be open source foundation for building discord.js applications with ease.
+It provides a stable framework to start making new commands, and is intended to be modular.
 
-export const Highlight = ({children, color}) => ( <span style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>{children}</span> );
+See the builds section for more information on builds.
 
-<Highlight color="#25c2a0">Docusaurus green</Highlight> and <Highlight color="#1877F2">Facebook blue</Highlight> are my favorite colors.
+# Updates
 
-I can write **Markdown** alongside my _JSX_!
+netSys does not have an update cycle. The dev branch has constant updates. Unlike nexOS, netSys does not have any evolution versions.
+
+netSys is updated when,
+
+- A significant update has been pushed 
+- Security Updates
+- Major Updates
+- 50/50 Updates
+
+The netSys Embedded Framework is free to use **assuming you leave the copyright notices, licence, and INFO files and do not modify them.**
+
