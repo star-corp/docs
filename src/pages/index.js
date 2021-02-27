@@ -135,7 +135,7 @@ auth { /* full-stack auth out-of-the-box */
 }
 `
   return (
-    <CodeBlockWithTitle title="todoApp.wasp" language="css" metastring="{7-8}">
+    <CodeBlockWithTitle title="packager module" language="css" metastring="{7-8}">
       { createAppWaspCode }
     </CodeBlockWithTitle>
   )
