@@ -10,7 +10,7 @@ export default {
   "projectName": "docs",
   "themeConfig": {
     "navbar": {
-      "title": "Packager Docs",
+      "title": "starCorp",
       "logo": {
         "alt": "My Site Logo",
         "src": "img/logo.svg"
