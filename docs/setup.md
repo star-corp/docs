@@ -3,15 +3,48 @@ id: setup
 title: netSys
 ---
 
-You can write JSX and use React components within your Markdown thanks to [MDX](https://mdxjs.com/).
+:::info Information
 
-export const Highlight = ({children, color}) => ( <span style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>{children}</span> );
+These instructions apply to the two official builds of netSys.
 
-<Highlight color="#25c2a0">Docusaurus green</Highlight> and <Highlight color="#1877F2">Facebook blue</Highlight> are my favorite colors.
+:::
 
-I can write **Markdown** alongside my _JSX_!
+:::caution Heads up!
+
+netSys has not been made open source.
+
+:::
+
+# Install
+
+You can install netSys by cloning the repo.
+
+## netSys Developer Build
+
+Clone the dev branch
+
+`git clone -b dev <URL>`
+
+Edit the config file
+
+`{
+    "config": {
+        "token": "token",
+        "prefix": "-"
+    
+    }
+    
+}`
+
+Run the startup command 
+
+`node .` or `node main.js`
+
+## netSys Consumer 
+
+:::caution Warning
+
+This section has not been completed.
+
+:::
+
