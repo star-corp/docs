@@ -1,17 +1,23 @@
 ---
 id: builds
-title: netSys
+title: Builds
 ---
 
-You can write JSX and use React components within your Markdown thanks to [MDX](https://mdxjs.com/).
+netSys has two builds avaliable.
 
-export const Highlight = ({children, color}) => ( <span style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>{children}</span> );
+**netSys Developer Build** and **netSys Embedded Framework.**
 
-<Highlight color="#25c2a0">Docusaurus green</Highlight> and <Highlight color="#1877F2">Facebook blue</Highlight> are my favorite colors.
+# netSys Developer Build
 
-I can write **Markdown** alongside my _JSX_!
+netSys Developer Builds are intended for the testing of applications or early releases of netSys.
+
+netSys Developer Builds are the code directly in the `dev` branch, so they may be prone to glitches or security vulnerabilities.
+
+# netSys Embedded Framework
+
+netSys Embedded Framework, is the main framework of netSys that is **stable** and has been tested to be fully functional.
+
+Although this build is tested, it is **still prone to glitches, bugs, or security vulnerabilities.**
+
+If you find a vulnerability that can cause **severe problems,** it's best to report it priavtely to a verified developer or contributor of netSys.
+
