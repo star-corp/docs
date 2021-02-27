@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
     Main: ['home', 'info', 'versions'],
-    Legal: ['licence'],
+    netSys: ['netsys', 'setup', 'activation', 'builds', 'netsysversions'],
   },
 };
