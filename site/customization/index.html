@@ -353,58 +353,9 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Customization
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         Customization
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#adding-assets" class="md-nav__link">
-    Adding assets
-  </a>
-  
-    <nav class="md-nav" aria-label="Adding assets">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#overriding-partials" class="md-nav__link">
-    Overriding partials
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#overriding-blocks" class="md-nav__link">
-    Overriding blocks
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -451,8 +402,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../insiders.md" class="md-nav__link">
-        Insiders
+      <a href="../license/" class="md-nav__link">
+        License
       </a>
     </li>
   
@@ -463,8 +414,20 @@
   
   
     <li class="md-nav__item">
-      <a href="../license/" class="md-nav__link">
-        License
+      <a href="../deprecations/" class="md-nav__link">
+        Deprecations
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        Changelog
       </a>
     </li>
   
@@ -494,41 +457,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#adding-assets" class="md-nav__link">
-    Adding assets
-  </a>
-  
-    <nav class="md-nav" aria-label="Adding assets">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#overriding-partials" class="md-nav__link">
-    Overriding partials
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#overriding-blocks" class="md-nav__link">
-    Overriding blocks
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -542,164 +470,9 @@
                 
                 
                 <h1 id="customization">Customization<a class="headerlink" href="#customization" title="Permanent link">&para;</a></h1>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>netSys Developer Builds are currently the only build that is documented at the moment.</p>
-</div>
-<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">netSys Embedded</label><div class="tabbed-content">
-<div class="admonition fail">
-<p class="admonition-title">Fail</p>
-<p>netSys Embedded Documentation is being worked on.</p>
-</div>
-</div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">netSys Developer Build</label><div class="tabbed-content">
-<p>Customization is an important part of netSys.</p>
-<h2 id="adding-assets">Adding assets<a class="headerlink" href="#adding-assets" title="Permanent link">&para;</a></h2>
 <div class="admonition warning">
-<p class="admonition-title">Theme extension prerequisites</p>
-</div>
-<p>As the <code>custom_dir</code> variable is used for the theme extension process,
-Material for MkDocs needs to be installed via <code>pip</code> and referenced with the
-<code>name</code> parameter in <code>mkdocs.yml</code>. It will not work when cloning from <code>git</code>.</p>
-<div class="highlight"><pre><span></span><code>.
-├─ .icons/                             <span class="c1"># Bundled icon sets</span>
-├─ assets/
-│  ├─ images/                          <span class="c1"># Images and icons</span>
-│  ├─ javascripts/                     <span class="c1"># JavaScript</span>
-│  └─ stylesheets/                     <span class="c1"># Stylesheets</span>
-├─ partials/
-│  ├─ integrations/                    <span class="c1"># Third-party integrations</span>
-│  │  ├─ analytics.html                <span class="c1"># - Google Analytics</span>
-│  │  └─ disqus.html                   <span class="c1"># - Disqus</span>
-│  ├─ languages/                       <span class="c1"># Localized languages</span>
-│  ├─ footer.html                      <span class="c1"># Footer bar</span>
-│  ├─ header.html                      <span class="c1"># Header bar</span>
-│  ├─ language.html                    <span class="c1"># Localized labels</span>
-│  ├─ logo.html                        <span class="c1"># Logo in header and sidebar</span>
-│  ├─ nav.html                         <span class="c1"># Main navigation</span>
-│  ├─ nav-item.html                    <span class="c1"># Main navigation item</span>
-│  ├─ palette.html                     <span class="c1"># Color palette</span>
-│  ├─ search.html                      <span class="c1"># Search box</span>
-│  ├─ social.html                      <span class="c1"># Social links</span>
-│  ├─ source.html                      <span class="c1"># Repository information</span>
-│  ├─ source-date.html                 <span class="c1"># Last updated date</span>
-│  ├─ source-link.html                 <span class="c1"># Link to source file</span>
-│  ├─ tabs.html                        <span class="c1"># Tabs navigation</span>
-│  ├─ tabs-item.html                   <span class="c1"># Tabs navigation item</span>
-│  ├─ toc.html                         <span class="c1"># Table of contents</span>
-│  └─ toc-item.html                    <span class="c1"># Table of contents item</span>
-├─ <span class="m">404</span>.html                            <span class="c1"># 404 error page</span>
-├─ base.html                           <span class="c1"># Base template</span>
-└─ main.html                           <span class="c1"># Default page</span>
-</code></pre></div>
-<h3 id="overriding-partials">Overriding partials<a class="headerlink" href="#overriding-partials" title="Permanent link">&para;</a></h3>
-<p>In order to override a partial, we can replace it with a file of the same name
-and location in the <code>overrides</code> directory. For example, to replace the original
-<code>footer.html</code>, create a <code>footer.html</code> file in the <code>overrides/partials</code>
-directory:</p>
-<div class="highlight"><pre><span></span><code>.
-├─ overrides/
-│  └─ partials/
-│     └─ footer.html
-└─ mkdocs.yml
-</code></pre></div>
-<p>MkDocs will now use the new partial when rendering the theme. This can be done
-with any file.</p>
-<h3 id="overriding-blocks">Overriding blocks<a class="headerlink" href="#overriding-blocks" title="Permanent link">&para;</a></h3>
-<p>Besides overriding partials, it's also possible to override (and extend)
-<em>template blocks</em>, which are defined inside the templates and wrap specific
-features. To override a block, create a <code>main.html</code> file inside the <code>overrides</code>
-directory:</p>
-<p>Material for MkDocs provides the following template blocks:</p>
-<table>
-<thead>
-<tr>
-<th>Block name</th>
-<th>Wrapped contents</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>analytics</code></td>
-<td>Wraps the Google Analytics integration</td>
-</tr>
-<tr>
-<td><code>announce</code></td>
-<td>Wraps the announcement bar</td>
-</tr>
-<tr>
-<td><code>config</code></td>
-<td>Wraps the JavaScript application config</td>
-</tr>
-<tr>
-<td><code>content</code></td>
-<td>Wraps the main content</td>
-</tr>
-<tr>
-<td><code>disqus</code></td>
-<td>Wraps the Disqus integration</td>
-</tr>
-<tr>
-<td><code>extrahead</code></td>
-<td>Empty block to add custom meta tags</td>
-</tr>
-<tr>
-<td><code>fonts</code></td>
-<td>Wraps the font definitions</td>
-</tr>
-<tr>
-<td><code>footer</code></td>
-<td>Wraps the footer with navigation and copyright</td>
-</tr>
-<tr>
-<td><code>header</code></td>
-<td>Wraps the fixed header bar</td>
-</tr>
-<tr>
-<td><code>hero</code></td>
-<td>Wraps the hero teaser (if available)</td>
-</tr>
-<tr>
-<td><code>htmltitle</code></td>
-<td>Wraps the <code>&lt;title&gt;</code> tag</td>
-</tr>
-<tr>
-<td><code>libs</code></td>
-<td>Wraps the JavaScript libraries (header)</td>
-</tr>
-<tr>
-<td><code>scripts</code></td>
-<td>Wraps the JavaScript application (footer)</td>
-</tr>
-<tr>
-<td><code>source</code></td>
-<td>Wraps the linked source files</td>
-</tr>
-<tr>
-<td><code>site_meta</code></td>
-<td>Wraps the meta tags in the document head</td>
-</tr>
-<tr>
-<td><code>site_nav</code></td>
-<td>Wraps the site navigation and table of contents</td>
-</tr>
-<tr>
-<td><code>styles</code></td>
-<td>Wraps the stylesheets (also extra sources)</td>
-</tr>
-<tr>
-<td><code>tabs</code></td>
-<td>Wraps the tabs navigation (if available)</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition warning">
-<p class="admonition-title">Automatically generated files</p>
-<p>Never make any changes in the <code>material</code> directory, as the contents of this
-directory are automatically generated from the <code>src</code> directory and will be
-overridden when the theme is built.</p>
-</div>
-</div>
+<p class="admonition-title">Customizating netSys</p>
+<p>Official customization has not been released yet, further details will be provided later.</p>
 </div>
                 
                   

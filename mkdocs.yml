@@ -121,8 +121,9 @@ nav:
     - Updating: upgrading.md
     - Troubleshooting: troubleshooting.md
     - Data privacy: data-privacy.md
-    - Insiders: insiders.md
     - License: license.md
+    - Deprecations: deprecations.md
+    - Changelog: changelog.md
 # Google Analytics
 google_analytics:
   - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
